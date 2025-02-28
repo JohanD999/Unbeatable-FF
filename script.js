@@ -23,3 +23,43 @@ function openFullscreen(img) {
 function closeFullscreen() {
     document.getElementById("fullscreen-view").style.display = "none";
 }
+let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+
+function moveSlide(step) {
+    currentIndex += step;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+    document.querySelector(".carousel").style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Touch Swipe Support (For Mobile)
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.querySelector(".carousel-container").addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+document.querySelector(".carousel-container").addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    if (touchStartX - touchEndX > 50) {
+        moveSlide(1); // Swipe Left
+    } else if (touchStartX - touchEndX < -50) {
+        moveSlide(-1); // Swipe Right
+    }
+});
+
+// Fullscreen View
+function openFullscreen(img) {
+    document.getElementById("fullscreen-view").style.display = "flex";
+    document.getElementById("fullscreen-img").src = img.src;
+}
+
+function closeFullscreen() {
+    document.getElementById("fullscreen-view").style.display = "none";
+}
