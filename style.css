@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfaf94;
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the background image */
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: flex-start; /* Moves content to the left */
+    gap: 20px; /* Space between pfp and name */
+    margin-left: 20px; /* Adjust the distance from the left edge */
+}
+
+#pr {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    
+}
+
+#name {
+    font-size: 50px;
+    color: #202020;
+    margin: 0;
+    transform: translateY(-50px);
+}
+
+
+#id {
+    font-size: 50px;
+    color: #202020;
+    margin: 0 0 -20px 0; /* Adds 10px space below name */
+    transform: translateX(-460px);
+    
+}
+ 
+/* Social Icons */
+.cons {
+    display: flex;
+    gap: 50px;
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.cons img:hover {
+    transform: scale(1.1);
+}
+
+/* Benefit & Stats Section */
+#benefit, #stats {
+    border: none;
+    background-color: #c54949;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#bene, #status {
+    font-size: 75px;
+    margin: 25px;
+}
+
+#bene2 {
+    max-width: 100%;
+    margin: 25px auto;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+/* Carousel Styling */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.carousel {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.4s ease-in-out;
+    justify-content: flex-start;
+}
+
+.slide {
+    width: 100%;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+/* Fullscreen Zoom */
+#fullscreen-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#fullscreen-img {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+}
+
+#last {
+    max-width: 100%;
+    height: 100px;
+    background-color: #c54949;
+    border: none;
+    font-size: 70px;
+    display: flex;
+    gap: 75px;
+    color: #d1cecc;
+}
+
+.ls {
+    margin:0 30px;
+    align-items: center;
+}
+
+#footer {
+    font-size: 20px;
+    text-align: center;
+}
+
