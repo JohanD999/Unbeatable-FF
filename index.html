@@ -1,70 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unbeatable FF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <title>Unbeatable FF</title>
 </head>
+
 <body>
-    <div class="profile">
-        <img id="pr" src="pfp.jpg" alt="Profile Picture">
-        <div class="info">
-            <h1 id="name">Unbeatable</h1>
-            <h2 id="id">UID: 3039452519</h2>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="pfp.jpg">
+            </a>
         </div>
-    </div>
 
-    <div class="social-links">
-        <a href="https://www.instagram.com/unbeatable_as_69/" title="Instagram">
-            <img src="ig.png" alt="Instagram">
-        </a>
-        <a href="https://youtube.com/@asfreefire6969" title="YouTube">
-            <img src="yt.png" alt="YouTube">
-        </a>
-        <a href="https://t.me/+rv6lqej-x45kY2Zl" title="Telegram">
-            <img src="tg.svg" alt="Telegram">
-        </a>
-        <a href="https://www.facebook.com/UBThunderFF" title="Facebook">
-            <img src="fb2.png" alt="Facebook">
-        </a>
-    </div>
-
-    <div id="benefit">
-        <h2>Why Join?</h2>
-        <ul>
-            <li>🏆 Free Tournaments</li>
-            <li>🎮 Esports Player Support</li>
-            <li>🔥 Popular Guild</li>
-            <li>💪 Train with Skilled Players</li>
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Benefits</a></li>
+            <li id="link2" class="link"><a href="#">Contacts</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
         </ul>
-    </div>
+        <a href="https://www.instagram.com/unbeatable_as_69/">
+            <button class="btn">Join</button>
+        </a>
+    </nav>
 
-    <div id="stats">
-        <h2>Gallery</h2>
-        <div class="carousel-container">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel">
-                <img class="slide" src="img1.jpg" onclick="openFullscreen(this)">
-                <img class="slide" src="img2.jpg" onclick="openFullscreen(this)">
-                <img class="slide" src="img3.jpg" onclick="openFullscreen(this)">
-                <img class="slide" src="img4.jpg" onclick="openFullscreen(this)">
-                <img class="slide" src="img5.jpg" onclick="openFullscreen(this)">
-            </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>Improve Your Skill With Me</h4>
+            <H1>Hi, I'm <span>Lawlet </span>, Gamer</H1>
+            
+            <p>
+               I'm a free fire player. My UID is 3039452519. You can contact me in my Instagram Id. My guild a friendly and improve players skills. You can watch my gameplay in my youtube Channel
+            </p>
+            <button class="btn">Join</button>
         </div>
+
+        <div class="image">
+            <img src="pfp.jpg">
+        </div>
+       
+    </header>
+
+    <section class="container">
+        <h2 class="header">Benefits</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-team-line"></i></span>
+                <h4>Pro players</h4>
+                <p>
+                    We play with new or unskilled players.
+                </p>
+                
+            </div>
+            <div class="card">
+                <span><i class="ri-gamepad-line"></i></span>
+                <h4>Improve Your Skills.</h4>
+                <p>
+                    We will improve your skills by teaching you.
+                </p>
+                
+            </div>
+            <div class="card">
+                <span><i class="ri-flag-line"></i></span>
+                <h4>Guild Wars</h4>
+                <p>
+                    Guild Wars are a fun with practice.
+                </p>
+                
+            </div>
+            <div class="card">
+                <span><i class="ri-computer-line"></i></i></span>
+                <h4>Achieve Your Dream</h4>
+                <p>
+                    We will help you to become a esport player.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">Contacts</h2>
+        <p class="sub-header">
+           Our contacts
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    
+                    <h3>Instagram</h3>
+                    <p>Join Our Group Of Skilled Player.</p>
+                </div>
+                <a href="https://www.instagram.com/unbeatable_as_69/">
+                    <button class="btn">Join Now</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="content">
+                    
+                    <h3>Youtube</h3>
+                    <p>Subscribe My Channel For Updates.</p>
+
+                </div>
+                <a href="https://youtube.com/@asfreefire6969">
+                    <button class="btn">Subscribe</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="content">
+                    
+                    <h3>Telegram</h3>
+                    <p>Join Telegram For Screenshots And Other Stuffs.</p>
+
+                </div>
+                <a href="https://t.me/+rv6lqej-x45kY2Zl">
+                    <button class="btn">Join Now</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="copyright">
+        Copyright © 2025 Johan Developer. All Rights Reserved.
     </div>
 
-    <div id="fullscreen-view" onclick="closeFullscreen()">
-        <img id="fullscreen-img">
-    </div>
-
-    <footer>
-        <a href="#">Home</a>
-        <a href="#">Contacts</a>
-        <a href="#">About</a>
-    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
